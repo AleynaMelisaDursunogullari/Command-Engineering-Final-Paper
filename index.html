@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ana Sayfa</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Bölümü -->
+    <header>
+        <h1>Hoşgeldiniz!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Anasayfa</a></li>
+                <li><a href="#about">Hakkında</a></li>
+                <li><a href="#services">Hizmetler</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carousel Bölümü -->
+    <section id="carousel">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://cdn-ilcegih.nitrocdn.com/ryIOMQXHIsXbpzUBQWZVrjBDzCCgphFT/assets/images/optimized/rev-f74ecb0/www.brandenn.com/wp-content/uploads/2023/07/westhancapital_web01.png" width="1024" class="d-block w-100" alt="Resim 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn-ilcegih.nitrocdn.com/ryIOMQXHIsXbpzUBQWZVrjBDzCCgphFT/assets/images/optimized/rev-f74ecb0/www.brandenn.com/wp-content/uploads/2023/07/ahorastore_macandmobile.png" class="d-block w-100" alt="Resim 2">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Ana içerik bölümü -->
+    <section id="welcome">
+        <h1>Web Sitemize Hoşgeldiniz!</h1>
+        <p>Bu site, web tasarımı ve yazılım geliştirme konusunda en son teknolojileri kullanarak mükemmel bir deneyim sunmak amacıyla hazırlanmıştır. Hedefimiz, kullanıcıların ihtiyaçlarını karşılayan kaliteli bir platform yaratmaktır.</p>
+        <p>Web tasarımında modern teknikler ve şık arayüzler kullanarak, her türlü cihazda sorunsuz çalışan responsive siteler tasarlıyoruz.</p>
+        <button onclick="window.location.href='#about'">Hakkında Daha Fazla</button>
+    </section>
+
+    <!-- Hakkında Bölümü -->
+    <section id="about">
+        <h2>Hakkında</h2>
+        <p>Biz, deneyimli bir yazılım geliştirme ve tasarım ekibiyiz. Yıllardır, müşteri odaklı çözümler üretiyor ve her projede mükemmeliyet hedefliyoruz.</p>
+    </section>
+
+    <!-- Hizmetler Bölümü -->
+    <section id="services">
+        <h2>Hizmetlerimiz</h2>
+        <ul>
+            <li><a href="web-tasarim-ve-gelistirme.html" class="service-link">Web Tasarımı ve Geliştirme</a></li>
+            <li><a href="ecommerce.html" class="service-link">E-Ticaret Çözümleri</a></li>
+            <li><a href="mobileApp.html" class="service-link">Mobil Uygulama Geliştirme</a></li>
+        </ul>
+    </section>
+
+ <!-- İletişim Bölümü -->
+ <form id="contactForm" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+    <label for="name" style="color: white; font-size: 12px;">Adınız:</label>
+    <input type="text" id="name" name="name" required style="padding: 6px; margin-bottom: 10px; background-color: #333; color: white; border: 1px solid #555; border-radius: 4px; width: 40%; font-size: 12px;">
+    
+    <label for="email" style="color: white; font-size: 12px;">E-posta:</label>
+    <input type="email" id="email" name="email" required style="padding: 6px; margin-bottom: 10px; background-color: #333; color: white; border: 1px solid #555; border-radius: 4px; width: 40%; font-size: 12px;">
+    
+    <label for="message" style="color: white; font-size: 12px;">Mesajınız:</label>
+    <textarea id="message" name="message" required style="padding: 6px; margin-bottom: 10px; background-color: #333; color: white; border: 1px solid #555; border-radius: 4px; width: 40%; height: 60px; font-size: 12px;"></textarea>
+    
+    <input type="submit" value="Gönder" style="background-color: #28a745; color: white; padding: 6px; border: none; border-radius: 4px; width: 40%; cursor: pointer; font-size: 12px;">
+</form>
+
+
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();  // Formun otomatik submit edilmesini engeller
+
+        const formData = new FormData(e.target);
+        const data = {
+            name: formData.get('name'),  // 'name' alanı 'name' olarak gönderilecek
+            email: formData.get('email'), // 'email' alanı 'email' olarak gönderilecek
+            message: formData.get('message')  // 'message' alanı 'message' olarak gönderilecek
+        };
+
+        fetch('http://localhost:3000/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)  // Form verisini JSON formatında gönderiyoruz
+        })
+        .then(response => response.json())  // JSON formatında cevap alıyoruz
+        .then(data => {
+            alert('Kayıt başarılı!');
+        })
+        .catch((error) => {
+            console.error('Hata:', error);
+            alert('Bir hata oluştu.');
+        });
+    });
+</script>
+    
+    
+    
+    
+</body>
+</html>

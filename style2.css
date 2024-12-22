@@ -1,0 +1,216 @@
+.card-img-top {
+    height: 200px; /* İstediğiniz sabit yükseklik */
+    object-fit: cover; /* Görüntüyü keserek boyuta sığdırır */
+    width: 100%; /* Genişlik kartın tamamını kapsar */
+}
+
+
+/* Genel vücut stili */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif'); /* Giphy GIF URL'si */
+    background-size: cover; /* GIF'in ekranı tamamen kaplamasını sağlar */
+    background-position: center center; /* Arka planın ortalanmasını sağlar */
+    background-repeat: no-repeat; /* GIF'in tekrarlanmaması için */
+    color: #f7f2f2;
+    height: 300vh; /* Sayfanın tamamını kapsayacak şekilde */
+}
+
+/* Header bölümü: Sayfa başlığı ve navigasyon menüsü */
+header {
+    background-color: rgba(51, 51, 51, 0.7); /* Arka plan saydamlık ekledik */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigasyon menüsü */
+nav ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Linklerin üzerine gelindiğinde renk değişimi */
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Ana içerik bölümü */
+section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #faf4f4;
+}
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #faf4f4;
+}
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #131313;
+}
+
+/* Buton stili */
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ffcc00;
+}
+
+/* Footer bölümü */
+footer {
+    background-color: rgba(51, 51, 51, 0.7); /* Saydamlık eklenerek arka planı hafifletme */
+    color: rgb(195, 54, 54);
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+#services {
+   
+    padding: 30px; /* İç boşluk */
+    border-radius: 8px; /* Kenar yuvarlama */
+}
+
+#services h2 {
+    color: #f8efef; /* Başlık rengi */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#services ul {
+    list-style-type: none; /* Liste işaretlerini kaldırır */
+    padding: 0;
+}
+
+#services ul li {
+    font-size: 18px;
+    color: #f0ecec; /* Liste elemanlarının rengi */
+    margin-bottom: 10px;
+}
+
+#services ul li:hover {
+    color: #ffcc00; /* Liste elemanlarının üzerine gelindiğinde renk değişimi */
+}
+/* İletişim kısmındaki arka planı saydam yapmak için */
+#contact {
+    padding: 30px;
+    border-radius: 8px;
+    background-color: rgba(51, 51, 51, 0.5); /* Arka plan saydamlık (alpha = 0.5) */
+    color: #f5f5f5; /* Yazı rengi */
+}
+
+#contact h2 {
+    color: #faf4f4;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #f5f5f5;
+}
+/* Hizmetler kısmındaki başlık ve liste elemanlarının beyaz olmasını sağla */
+#services h2 {
+    color: #fff; /* Başlık rengi beyaz */
+}
+
+#services ul li {
+    color: #fff; /* Liste elemanlarının rengi beyaz */
+}
+
+
+.carousel-item img {
+    width: 80%;  /* Genişliği %80 yapar */
+    height: auto;  /* Yüksekliği orantılı olarak ayarlar */
+    margin: 0 auto;  /* Resmi ortalar */
+    display: block;  /* Resmi blok düzende gösterir */
+}
+#carouselExampleAutoplaying .carousel-item img {
+    width: 80%;  /* Resmin genişliğini %100 yapar */
+    height: 90vh;  /* Yüksekliği sabitler */
+    object-fit: cover;  /* Resmi alana orantılı şekilde sığdırırken kırpma yapar */
+}
+
+#categories {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#categories h2 {
+    margin-bottom: 20px;
+    color: #fff; /
+}
+
+/* Flexbox düzeni ile kategorileri yan yana hizalayalım */
+.categories-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Mobilde veya küçük ekranlarda alt alta yerleşmesi için */
+}
+
+.category-item {
+    text-align: center;
+    margin-bottom: 30px; /* Alt boşluk */
+    width: 150px; /* Kategoriler için daha küçük genişlik */
+}
+
+.category-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+    display: block;
+}
+
+.category-img {
+    width: 100%; /* Resim genişliği, kapsayıcı genişliğe uyacak şekilde */
+    height: 120px; /* Resmin yüksekliğini küçültüyoruz */
+    object-fit: cover; /* Resmi kareye sığdırır */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Kategori başlıklarına ekstra stil ekleyebilirsiniz */
+.category-item h3 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+#footerid p {
+    color: #fff; /* Yazı rengini beyaz yapar */
+    font-size: 16px; /* Yazı boyutunu ayarlayabilirsiniz */
+    margin: 0; /* Gereksiz boşlukları kaldırır */
+}
