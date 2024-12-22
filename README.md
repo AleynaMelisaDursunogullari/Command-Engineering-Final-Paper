@@ -6,5 +6,5 @@ Final Assignment of 4th grade Command course at Kütahya Health Sciences Univers
 
 
 
-https://github.com/user-attachments/assets/a0b7683f-a54c-458d-aef7-04502321b119
+https://github.com/user-attachments/assets/57cb9925-1d8d-4372-8d7f-1057504ac2f4
 
