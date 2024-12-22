@@ -4,5 +4,5 @@ Final Assignment of 4th grade Command course at Kütahya Health Sciences Univers
 
 
 
-Uploading Ana Sayfa - Google Chrome 2024-12-22 14-45-57.mp4…
+
 
